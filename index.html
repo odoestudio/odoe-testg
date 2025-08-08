@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful Movement - Your Path to Inner Peace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-stone-50 text-stone-800 font-poppins">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 transition-all duration-300 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/index.html" class="text-2xl font-playfair font-bold text-emerald-800">Mindful Movement</a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="/index.html" class="nav-link active-link">Home</a>
+                <a href="/classes.html" class="nav-link">Classes</a>
+                <a href="/instructors.html" class="nav-link">Instructors</a>
+                <a href="/pricing.html" class="nav-link">Pricing</a>
+                <a href="/meditation.html" class="nav-link">Resources</a>
+                <a href="/blog.html" class="nav-link">Blog</a>
+                <a href="/contact.html" class="nav-link">Contact</a>
+            </nav>
+            <a href="/classes.html" class="hidden md:inline-block bg-emerald-700 text-white px-6 py-2 rounded-full hover:bg-emerald-800 transition-colors">Book a Class</a>
+            <button id="mobile-menu-button" class="md:hidden text-2xl text-emerald-800">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-white/95 backdrop-blur-xl z-40 pt-24">
+        <nav class="flex flex-col items-center space-y-8 text-xl">
+            <a href="/index.html" class="nav-link active-link">Home</a>
+            <a href="/classes.html" class="nav-link">Classes</a>
+            <a href="/instructors.html" class="nav-link">Instructors</a>
+            <a href="/pricing.html" class="nav-link">Pricing</a>
+            <a href="/meditation.html" class="nav-link">Resources</a>
+            <a href="/blog.html" class="nav-link">Blog</a>
+            <a href="/contact.html" class="nav-link">Contact</a>
+            <a href="/classes.html" class="mt-4 bg-emerald-700 text-white px-8 py-3 rounded-full hover:bg-emerald-800 transition-colors">Book a Class</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="h-screen bg-cover bg-center flex items-center justify-center text-white" style="background-image: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2120&auto=format&fit=crop');">
+        <div class="bg-black/50 absolute inset-0"></div>
+        <div class="text-center z-10 p-4 animate-fade-in-up">
+            <h1 class="text-5xl md:text-7xl font-playfair font-bold mb-4">Find Your Inner Sanctuary</h1>
+            <p class="text-lg md:text-xl font-light max-w-2xl mx-auto mb-8">Discover the transformative power of yoga and meditation. Your journey to balance, strength, and peace begins here.</p>
+            <a href="/classes.html" class="bg-white text-emerald-800 font-semibold px-10 py-4 rounded-full hover:bg-stone-200 transition-all duration-300 transform hover:scale-105">Explore Our Classes</a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-3xl mx-auto reveal">
+                <h2 class="text-4xl font-playfair text-emerald-800 mb-6">Welcome to Mindful Movement</h2>
+                <p class="text-lg text-stone-600 mb-8">We are more than just a yoga studio; we are a community dedicated to fostering well-being for mind, body, and soul. Our serene space invites you to unplug from the daily hustle and reconnect with your inner self. Whether you're a seasoned yogi or stepping onto the mat for the first time, you'll find a welcoming home here.</p>
+                <a href="/instructors.html" class="text-emerald-700 font-semibold hover:text-emerald-900 transition">Meet Our Instructors <i class="fas fa-arrow-right ml-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-emerald-50/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 reveal">
+                <h2 class="text-4xl font-playfair text-emerald-800 mb-4">Your Path to Wellness</h2>
+                <p class="text-lg text-stone-600 max-w-2xl mx-auto">Experience a holistic approach to health that nurtures every aspect of your being.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="text-center p-8 reveal">
+                    <div class="text-5xl text-emerald-700 mb-4"><i class="fas fa-user-friends"></i></div>
+                    <h3 class="text-2xl font-playfair mb-3">Expert Instructors</h3>
+                    <p class="text-stone-600">Learn from certified and passionate teachers dedicated to your growth and safety.</p>
+                </div>
+                <div class="text-center p-8 reveal">
+                    <div class="text-5xl text-emerald-700 mb-4"><i class="fas fa-spa"></i></div>
+                    <h3 class="text-2xl font-playfair mb-3">Serene Environment</h3>
+                    <p class="text-stone-600">Practice in a beautiful, light-filled studio designed to be your urban sanctuary.</p>
+                </div>
+                <div class="text-center p-8 reveal">
+                    <div class="text-5xl text-emerald-700 mb-4"><i class="fas fa-heart"></i></div>
+                    <h3 class="text-2xl font-playfair mb-3">All Levels Welcome</h3>
+                    <p class="text-stone-600">From gentle beginner classes to dynamic flows, we have something for everyone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Classes Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 reveal">
+                <h2 class="text-4xl font-playfair text-emerald-800 mb-4">Discover Your Flow</h2>
+                <p class="text-lg text-stone-600 max-w-2xl mx-auto">Explore some of our most popular classes designed to challenge and inspire you.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Class Card 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 reveal">
+                    <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?q=80&w=2070&auto=format&fit=crop" alt="Vinyasa Flow" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-playfair text-emerald-800 mb-2">Vinyasa Flow</h3>
+                        <p class="text-stone-600 mb-4">A dynamic practice linking breath with movement to build strength and flexibility.</p>
+                        <a href="/classes.html#schedule" class="font-semibold text-emerald-700 hover:text-emerald-900">View Schedule <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                <!-- Class Card 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 reveal">
+                    <img src="https://images.unsplash.com/photo-1575052814086-4959e5e1355b?q=80&w=2070&auto=format&fit=crop" alt="Yin Yoga" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-playfair text-emerald-800 mb-2">Restorative Yin</h3>
+                        <p class="text-stone-600 mb-4">A slow-paced, meditative practice with long-held poses to target deep connective tissues.</p>
+                        <a href="/classes.html#schedule" class="font-semibold text-emerald-700 hover:text-emerald-900">View Schedule <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                <!-- Class Card 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 reveal">
+                    <img src="https://images.unsplash.com/photo-1603988363602-9118a834a42a?q=80&w=2070&auto=format&fit=crop" alt="Guided Meditation" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-playfair text-emerald-800 mb-2">Guided Meditation</h3>
+                        <p class="text-stone-600 mb-4">Calm your mind and cultivate presence with our guided mindfulness sessions.</p>
+                        <a href="/meditation.html" class="font-semibold text-emerald-700 hover:text-emerald-900">Find Peace <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-cover bg-fixed" style="background-image: url('https://images.unsplash.com/photo-1506126613408-4e05860f5dde?q=80&w=2070&auto=format&fit=crop')">
+        <div class="absolute inset-0 bg-emerald-900/80"></div>
+        <div class="container mx-auto px-6 relative z-10">
+         
+
+... (file truncated for brevity) ...
