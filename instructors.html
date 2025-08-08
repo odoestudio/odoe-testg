@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Instructors - Mindful Movement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-stone-50 text-stone-800 font-poppins">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 transition-all duration-300 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/index.html" class="text-2xl font-playfair font-bold text-emerald-800">Mindful Movement</a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="/classes.html" class="nav-link">Classes</a>
+                <a href="/instructors.html" class="nav-link active-link">Instructors</a>
+                <a href="/pricing.html" class="nav-link">Pricing</a>
+                <a href="/meditation.html" class="nav-link">Resources</a>
+                <a href="/blog.html" class="nav-link">Blog</a>
+                <a href="/contact.html" class="nav-link">Contact</a>
+            </nav>
+            <a href="/classes.html" class="hidden md:inline-block bg-emerald-700 text-white px-6 py-2 rounded-full hover:bg-emerald-800 transition-colors">Book a Class</a>
+            <button id="mobile-menu-button" class="md:hidden text-2xl text-emerald-800">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-white/95 backdrop-blur-xl z-40 pt-24">
+        <nav class="flex flex-col items-center space-y-8 text-xl">
+            <a href="/index.html" class="nav-link">Home</a>
+            <a href="/classes.html" class="nav-link">Classes</a>
+            <a href="/instructors.html" class="nav-link active-link">Instructors</a>
+            <a href="/pricing.html" class="nav-link">Pricing</a>
+            <a href="/meditation.html" class="nav-link">Resources</a>
+            <a href="/blog.html" class="nav-link">Blog</a>
+            <a href="/contact.html" class="nav-link">Contact</a>
+            <a href="/classes.html" class="mt-4 bg-emerald-700 text-white px-8 py-3 rounded-full hover:bg-emerald-800 transition-colors">Book a Class</a>
+        </nav>
+    </div>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-emerald-50/50">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-playfair text-emerald-800">Meet Our Guides</h1>
+            <p class="text-lg text-stone-600 mt-4 max-w-2xl mx-auto">Our certified instructors are the heart of our studio, dedicated to guiding you on your wellness journey.</p>
+        </div>
+    </section>
+
+    <!-- Instructors Grid Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Instructor Card 1 -->
+                <div class="bg-stone-100/60 rounded-lg p-8 text-center group reveal transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://images.unsplash.com/photo-1597843734665-27663943312c?q=80&w=1887&auto=format&fit=crop" alt="Elara Finch" class="w-32 h-32 rounded-full mx-auto mb-6 shadow-lg border-4 border-white group-hover:border-emerald-200 transition-colors">
+                    <h3 class="text-2xl font-playfair text-emerald-800">Elara Finch</h3>
+                    <p class="text-emerald-700 font-semibold mb-3">Vinyasa & Flow Specialist</p>
+                    <p class="text-stone-600 mb-4">Elara's classes are a dynamic dance of breath and movement, designed to build heat, strength, and inner grace.</p>
+                    <p class="text-sm text-stone-500">Certifications: E-RYT 500, YACEP</p>
+                </div>
+
+                <!-- Instructor Card 2 -->
+                <div class="bg-stone-100/60 rounded-lg p-8 text-center group reveal transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://images.unsplash.com/photo-1615623398188-34f3586b5c34?q=80&w=1887&auto=format&fit=crop" alt="Kael Weston" class="w-32 h-32 rounded-full mx-auto mb-6 shadow-lg border-4 border-white group-hover:border-emerald-200 transition-colors">
+                    <h3 class="text-2xl font-playfair text-emerald-800">Kael Weston</h3>
+                    <p class="text-emerald-700 font-semibold mb-3">Power & Ashtanga Guide</p>
+                    <p class="text-stone-600 mb-4">Kael brings intensity and focus to the mat, challenging students to explore their limits in a supportive environment.</p>
+                    <p class="text-sm text-stone-500">Certifications: RYT 500, Certified Ashtanga Instructor</p>
+                </div>
+
+                <!-- Instructor Card 3 -->
+                <div class="bg-stone-100/60 rounded-lg p-8 text-center group reveal transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://images.unsplash.com/photo-1605243423792-96537b0d238e?q=80&w=1887&auto=format&fit=crop" alt="Anya Sharma" class="w-32 h-32 rounded-full mx-auto mb-6 shadow-lg border-4 border-white group-hover:border-emerald-200 transition-colors">
+                    <h3 class="text-2xl font-playfair text-emerald-800">Anya Sharma</h3>
+                    <p class="text-emerald-700 font-semibold mb-3">Restorative & Yin Expert</p>
+                    <p class="text-stone-600 mb-4">Anya creates a space of deep relaxation and healing, guiding students through gentle, meditative practices.</p>
+                    <p class="text-sm text-stone-500">Certifications: RYT 200, Certified Yin Yoga Teacher</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Retreats Section -->
+    <section class="py-20 bg-emerald-50/50">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="reveal">
+                    <img src="https://images.unsplash.com/photo-1473625247510-8ceb1760943f?q=80&w=2069&auto=format&fit=crop" alt="Yoga retreat in nature" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div class="reveal">
+                    <h2 class="text-4xl font-playfair text-emerald-800 mb-6">Upcoming Wellness Retreat</h2>
+                    <p class="text-xl font-semibold text-stone-700">Bali Bliss: A Yoga & Meditation Escape</p>
+                    <p class="text-stone-600 mb-4">Join us for a 7-day immersive retreat in the spiritual heart of Bali. Deepen your practice, nourish your body with wholesome food, and reconnect with nature and yourself. Limited spots available.</p>
+                    <p class="font-bold text-emerald-700 mb-6">October 15-22, 2024</p>
+                    <a href="/contact.html" class="bg-emerald-700 text-white font-semibold px-8 py-3 rounded-full hover:bg-emerald-800 transition-all duration-300">Inquire for Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-900 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-playfair font-bold mb-4">Mindful Movement</h3>
+                    <p class="text-stone-300">Your sanctuary for yoga, meditation, and wellness in the heart of the city.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-stone-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-stone-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-stone-300 hover:text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/about.html" class="text-stone-300 hover:text-white transition">About Us</a></li>
+                        <li><a href="/classes.html" class="text-stone-300 hover:text-white transition">Class Schedule</a></li>
+                        <li><a href="/blog.html" class="text-stone-300 hover:text-white transition">Blog</a></li>
+                        <li><a href="/contact.html" class="text-stone-300 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Our Offerings</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/classes.html" class="text-stone-300 hover:text-white transition">Yoga Classes</a></li>
+                        <li><a href="/meditation.html" class="text-stone-300 hover:text-white transition">Meditation</a></li>
+                        <li><a href="#" class="text-stone-300 hover:text-white transition">Retreats</a></li>
+                        <li><a href="/pricing.html" class="text-stone-300 hover:text-white transition">Memberships</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Stay Updated</h3>
+          
+
+... (file truncated for brevity) ...
