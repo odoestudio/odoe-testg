@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Schedule - Mindful Movement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-stone-50 text-stone-800 font-poppins">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 transition-all duration-300 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/index.html" class="text-2xl font-playfair font-bold text-emerald-800">Mindful Movement</a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="/classes.html" class="nav-link active-link">Classes</a>
+                <a href="/instructors.html" class="nav-link">Instructors</a>
+                <a href="/pricing.html" class="nav-link">Pricing</a>
+                <a href="/meditation.html" class="nav-link">Resources</a>
+                <a href="/blog.html" class="nav-link">Blog</a>
+                <a href="/contact.html" class="nav-link">Contact</a>
+            </nav>
+            <a href="/classes.html" class="hidden md:inline-block bg-emerald-700 text-white px-6 py-2 rounded-full hover:bg-emerald-800 transition-colors">Book a Class</a>
+            <button id="mobile-menu-button" class="md:hidden text-2xl text-emerald-800">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-white/95 backdrop-blur-xl z-40 pt-24">
+        <nav class="flex flex-col items-center space-y-8 text-xl">
+            <a href="/index.html" class="nav-link">Home</a>
+            <a href="/classes.html" class="nav-link active-link">Classes</a>
+            <a href="/instructors.html" class="nav-link">Instructors</a>
+            <a href="/pricing.html" class="nav-link">Pricing</a>
+            <a href="/meditation.html" class="nav-link">Resources</a>
+            <a href="/blog.html" class="nav-link">Blog</a>
+            <a href="/contact.html" class="nav-link">Contact</a>
+            <a href="/classes.html" class="mt-4 bg-emerald-700 text-white px-8 py-3 rounded-full hover:bg-emerald-800 transition-colors">Book a Class</a>
+        </nav>
+    </div>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-emerald-50/50">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-playfair text-emerald-800">Class Schedule</h1>
+            <p class="text-lg text-stone-600 mt-4 max-w-2xl mx-auto">Find your perfect class. Book your mat and join us in person or virtually.</p>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="reveal">
+                <div class="flex justify-center items-center space-x-6 mb-8">
+                    <div class="flex items-center space-x-2"><span class="w-4 h-4 rounded-full bg-green-400"></span><span>Beginner</span></div>
+                    <div class="flex items-center space-x-2"><span class="w-4 h-4 rounded-full bg-yellow-400"></span><span>Intermediate</span></div>
+                    <div class="flex items-center space-x-2"><span class="w-4 h-4 rounded-full bg-red-400"></span><span>Advanced</span></div>
+                </div>
+                <div class="overflow-x-auto shadow-lg rounded-lg">
+                    <table class="w-full text-left text-stone-600">
+                        <thead class="bg-emerald-100 text-emerald-800">
+                            <tr>
+                                <th class="p-4 font-semibold">Time</th>
+                                <th class="p-4 font-semibold">Monday</th>
+                                <th class="p-4 font-semibold">Tuesday</th>
+                                <th class="p-4 font-semibold">Wednesday</th>
+                                <th class="p-4 font-semibold">Thursday</th>
+                                <th class="p-4 font-semibold">Friday</th>
+                                <th class="p-4 font-semibold">Saturday</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-stone-200">
+                            <!-- Time Slot 1 -->
+                            <tr>
+                                <td class="p-4 font-semibold">7:00 AM</td>
+                                <td><div class="class-item" data-class="Sunrise Vinyasa"><span class="level-dot bg-yellow-400"></span>Sunrise Vinyasa<br><span class="instructor">w/ Elara</span></div></td>
+                                <td></td>
+                                <td><div class="class-item" data-class="Sunrise Vinyasa"><span class="level-dot bg-yellow-400"></span>Sunrise Vinyasa<br><span class="instructor">w/ Elara</span></div></td>
+                                <td></td>
+                                <td><div class="class-item" data-class="Sunrise Vinyasa"><span class="level-dot bg-yellow-400"></span>Sunrise Vinyasa<br><span class="instructor">w/ Elara</span></div></td>
+                                <td><div class="class-item" data-class="Power Flow"><span class="level-dot bg-red-400"></span>Power Flow<br><span class="instructor">w/ Kael</span></div></td>
+                            </tr>
+                            <!-- Time Slot 2 -->
+                            <tr>
+                                <td class="p-4 font-semibold">9:00 AM</td>
+                                <td><div class="class-item" data-class="Gentle Hatha"><span class="level-dot bg-green-400"></span>Gentle Hatha<br><span class="instructor">w/ Anya</span></div></td>
+                                <td><div class="class-item" data-class="Vinyasa Flow"><span class="level-dot bg-yellow-400"></span>Vinyasa Flow<br><span class="instructor">w/ Elara</span></div></td>
+                                <td><div class="class-item" data-class="Gentle Hatha"><span class="level-dot bg-green-400"></span>Gentle Hatha<br><span class="instructor">w/ Anya</span></div></td>
+                                <td><div class="class-item" data-class="Vinyasa Flow"><span class="level-dot bg-yellow-400"></span>Vinyasa Flow<br><span class="instructor">w/ Elara</span></div></td>
+                                <td><div class="class-item" data-class="Gentle Hatha"><span class="level-dot bg-green-400"></span>Gentle Hatha<br><span class="instructor">w/ Anya</span></div></td>
+                                <td><div class="class-item" data-class="Community Vinyasa"><span class="level-dot bg-yellow-400"></span>Community Vinyasa<br><span class="instructor">w/ All</span></div></td>
+                            </tr>
+                            <!-- Time Slot 3 -->
+                             <tr>
+                                <td class="p-4 font-semibold">12:00 PM</td>
+                                <td><div class="class-item" data-class="Lunchtime Express"><span class="level-dot bg-yellow-400"></span>Lunchtime Express<br><span class="instructor">w/ Kael</span></div></td>
+                                <td><div class="class-item" data-class="Mindful Meditation"><span class="level-dot bg-green-400"></span>Mindful Meditation<br><span class="instructor">w/ Anya</span></div></td>
+                                <td><div class="class-item" data-class="Lunchtime Express"><span class="level-dot bg-yellow-400"></span>Lunchtime Express<br><span class="instructor">w/ Kael</span></div></td>
+                                <td><div class="class-item" data-class="Mindful Meditation"><span class="level-dot bg-green-400"></span>Mindful Meditation<br><span class="instructor">w/ Anya</span></div></td>
+                                <td><div class="class-item" data-class="Lunchtime Express"><span class="level-dot bg-yellow-400"></span>Lunchtime Express<br><span class="instructor">w/ Kael</span></div></td>
+                                <td></td>
+                            </tr>
+                            <!-- Time Slot 4 -->
+                             <tr>
+                                <td class="p-4 font-semibold">5:30 PM</td>
+                                <td><div class="class-item" data-class="Power Flow"><span class="level-dot bg-red-400"></span>Power Flow<br><span class="instructor">w/ Kael</span></div></td>
+                                <td><div class="class-item" data-class="Restorative Yin"><span class="level-dot bg-green-400"></span>Restorative Yin<br><span class="instructor">w/ Anya</span></div></td>
+                                <td><div class="class-item" data-class="Ashtanga Primary"><span class="level-dot bg-red-400"></span>Ashtanga Primary<br><span class="instructor">w/ Kael</span></div></td>
+                                <td><div class="class-item" data-class="Restorative Yin"><span class="level-dot bg-green-400"></span>Restorative Yin<br><span class="instructor">w/ Anya</span></div></td>
+                                <td><div class="class-item" data-class="Happy Hour Flow"><span class="level-dot bg-yellow-400"></span>Happy Hour Flow<br><span class="instructor">w/ Elara</span></div></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    
+
+... (file truncated for brevity) ...
