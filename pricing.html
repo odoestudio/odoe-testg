@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing & Memberships - Mindful Movement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-stone-50 text-stone-800 font-poppins">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 transition-all duration-300 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/index.html" class="text-2xl font-playfair font-bold text-emerald-800">Mindful Movement</a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="/classes.html" class="nav-link">Classes</a>
+                <a href="/instructors.html" class="nav-link">Instructors</a>
+                <a href="/pricing.html" class="nav-link active-link">Pricing</a>
+                <a href="/meditation.html" class="nav-link">Resources</a>
+                <a href="/blog.html" class="nav-link">Blog</a>
+                <a href="/contact.html" class="nav-link">Contact</a>
+            </nav>
+            <a href="/classes.html" class="hidden md:inline-block bg-emerald-700 text-white px-6 py-2 rounded-full hover:bg-emerald-800 transition-colors">Book a Class</a>
+            <button id="mobile-menu-button" class="md:hidden text-2xl text-emerald-800">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-white/95 backdrop-blur-xl z-40 pt-24">
+        <nav class="flex flex-col items-center space-y-8 text-xl">
+            <a href="/index.html" class="nav-link">Home</a>
+            <a href="/classes.html" class="nav-link">Classes</a>
+            <a href="/instructors.html" class="nav-link">Instructors</a>
+            <a href="/pricing.html" class="nav-link active-link">Pricing</a>
+            <a href="/meditation.html" class="nav-link">Resources</a>
+            <a href="/blog.html" class="nav-link">Blog</a>
+            <a href="/contact.html" class="nav-link">Contact</a>
+            <a href="/classes.html" class="mt-4 bg-emerald-700 text-white px-8 py-3 rounded-full hover:bg-emerald-800 transition-colors">Book a Class</a>
+        </nav>
+    </div>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-emerald-50/50">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-playfair text-emerald-800">Find Your Perfect Plan</h1>
+            <p class="text-lg text-stone-600 mt-4 max-w-2xl mx-auto">Invest in your well-being. We offer flexible options to fit your practice and lifestyle.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Table Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-3 gap-8 items-stretch">
+
+                <!-- Plan 1: Drop-In -->
+                <div class="border border-stone-200 rounded-lg p-8 flex flex-col reveal">
+                    <h3 class="text-2xl font-playfair text-emerald-800">Drop-In</h3>
+                    <p class="text-stone-500 mt-2">Perfect for the occasional visit.</p>
+                    <p class="text-5xl font-playfair font-bold my-6">$25 <span class="text-lg font-poppins font-normal text-stone-500">/ class</span></p>
+                    <ul class="space-y-4 text-stone-600 mb-8 flex-grow">
+                        <li class="flex items-center"><i class="fas fa-check text-emerald-600 mr-3"></i>Access to any single class</li>
+                        <li class="flex items-center"><i class="fas fa-check text-emerald-600 mr-3"></i>In-studio or virtual option</li>
+                        <li class="flex items-center"><i class="fas fa-check text-emerald-600 mr-3"></i>Mat and props included</li>
+                    </ul>
+                    <a href="/classes.html" class="w-full text-center bg-emerald-100 text-emerald-800 font-semibold py-3 rounded-full hover:bg-emerald-200 transition-colors">Book a Class</a>
+                </div>
+
+                <!-- Plan 2: Monthly Unlimited (Most Popular) -->
+                <div class="border-2 border-emerald-700 rounded-lg p-8 flex flex-col relative overflow-hidden shadow-2xl reveal">
+                    <div class="absolute top-0 right-0 bg-emerald-700 text-white text-xs font-bold px-4 py-1 rounded-bl-lg">MOST POPULAR</div>
+                    <h3 class="text-2xl font-playfair text-emerald-800">Monthly Unlimited</h3>
+                    <p class="text-stone-500 mt-2">Commit to your practice and grow.</p>
+                    <p class="text-5xl font-playfair font-bold my-6">$150 <span class="text-lg font-poppins font-normal text-stone-500">/ month</span></p>
+                    <ul class="space-y-4 text-stone-600 mb-8 flex-grow">
+                        <li class="flex items-center"><i class="fas fa-check text-emerald-600 mr-3"></i>Unlimited in-studio classes</li>
+                        <li class="flex items-center"><i class="fas fa-check text-emerald-600 mr-3"></i>Unlimited virtual classes</li>
+                        <li class="flex items-center"><i class="fas fa-check text-emerald-600 mr-3"></i>Access to on-demand library</li>
+                        <li class="flex items-center"><i class="fas fa-check text-emerald-600 mr-3"></i>10% off workshops & retreats</li>
+                        <li class="flex items-center"><i class="fas fa-check text-emerald-600 mr-3"></i>One free guest pass per month</li>
+                    </ul>
+                    <a href="/contact.html" class="w-full text-center bg-emerald-700 text-white font-semibold py-3 rounded-full hover:bg-emerald-800 transition-colors">Become a Member</a>
+                </div>
+
+                <!-- Plan 3: Class Pass -->
+                <div class="border border-stone-200 rounded-lg p-8 flex flex-col reveal">
+                    <h3 class="text-2xl font-playfair text-emerald-800">10-Class Pass</h3>
+                    <p class="text-stone-500 mt-2">Flexibility for your busy schedule.</p>
+                    <p class="text-5xl font-playfair font-bold my-6">$220 <span class="text-lg font-poppins font-normal text-stone-500">/ 10 classes</span></p>
+                    <ul class="space-y-4 text-stone-600 mb-8 flex-grow">
+                        <li class="flex items-center"><i class="fas fa-check text-emerald-600 mr-3"></i>Valid for 10 classes</li>
+                        <li class="flex items-center"><i class="fas fa-check text-emerald-600 mr-3"></i>Expires in 3 months</li>
+                        <li class="flex items-center"><i class="fas fa-check text-emerald-600 mr-3"></i>In-studio or virtual option</li>
+                        <li class="flex items-center"><i class="fas fa-check text-emerald-600 mr-3"></i>Shareable with a friend</li>
+                    </ul>
+                    <a href="/contact.html" class="w-full text-center bg-emerald-100 text-emerald-800 font-semibold py-3 rounded-full hover:bg-emerald-200 transition-colors">Purchase Pass</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- New Student Offer -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="bg-cover bg-center rounded-lg shadow-xl p-12 md:p-20 text-center text-white reveal" style="background-image: linear-gradient(rgba(20, 83, 45, 0.8), rgba(20, 83, 45, 0.8)), url('https://images.unsplash.com/photo-1552196563-55cd4e45efb3?q=80&w=1926&auto=format&fit=crop');">
+                <h2 class="text-4xl font-playfair mb-4">New to Our Studio?</h2>
+                <p class="text-lg max-w-2xl mx-auto mb-6">Begin your journey with our special introductory offer. Experience all our studio has to offer and find the classes that resonate with you.</p>
+                <div class="bg-white/20 backdrop-blur-sm inline-block p-6 rounded-lg">
+                    <p class="text-2xl font-bold">30 Days of Unlimited Yoga for $49</p>
+                </div>
+                <br>
+                <a href="/contact.html" class="mt-8 inline-block bg-white text-emerald-800 font-semibold px-10 py-4 rounded-full hover:bg-stone-200 transition-all duration-300 transform hover:scale-105">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-900 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-playfair font-bold mb-4">Mindful Movement</h3>
+                    <p class="text-stone-300">Your sanctuary for yoga, meditation, and wellness in the heart of the city.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-stone-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-stone-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-stone-300 hover:text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/about.html" class="text-stone-300 hover:text-white tran
+
+... (file truncated for brevity) ...
